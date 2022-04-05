@@ -13,7 +13,7 @@ server.get('/', (req, res) => {
 
 server.use('/user', userRouter);
 
-mongoose.connect("mongodb+srv://admin:admin@bloodbank.28xmf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority").then(() => {
+mongoose.connect("").then(() => {
     server.listen(PORT, () => {
         console.log(`server is running on port ${PORT}`);
     })
